@@ -1,0 +1,63 @@
+#content{
+		height: 700px;
+	}
+	#lx form{
+		display: block;
+		float: left;
+		width: 390px;
+		height: 500px;
+		margin-top: 30px;
+	}
+	#lx form input {
+		width: 280px;
+		height: 25px;
+		border-radius: 5px;
+		border: 1px solid #888;
+	}
+	#lx form b{
+		color: #c00;
+	}
+	#lx form span,#lx form p input {
+		vertical-align: middle;
+	}
+	#lx form span,#lx form p textarea {
+		vertical-align: middle;
+	}
+	form p textarea {
+		width: 310px;
+	}
+	#rx {
+		margin-top: 20px;
+		float: left;
+		width: 300px;
+		color:#555;
+		border: 1px solid #888;
+	}
+	#rx h1 {
+		font-size: 20px;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-bottom: 10px;
+		border-bottom: 2px dashed #666;
+	}
+	#rx h3 {
+		margin: 12px 20px;
+		width: 250px;
+		height: 20px;
+		color: #fff;
+		font-weight: normal;
+		line-height: 20px;
+		font-size: 13px;
+		padding-left: 10px;
+		background: #222;
+	}
+	#rx p{
+		font-size: 12px;
+		margin: 12px 20px;
+		width: 260px;
+		text-indent: 0;
+	}
+	#footer {
+		margin-top: 20px;
+	}

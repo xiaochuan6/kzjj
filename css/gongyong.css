@@ -1,0 +1,95 @@
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,em,form,fieldset,legend,input,textarea,select {
+margin:0;
+padding:0;
+font-family: '微软雅黑';
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+#header,#content,#footer{
+	position: relative;
+	width: 920px;
+	margin: auto;
+}
+#header {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #999;
+}
+#headernav #nav {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 700px;
+	height: 50px;
+}
+#headernav #nav li {
+	float: left;
+}
+a{
+	text-decoration: none;
+	color: #808080;
+}
+#nav{
+	height: 50px;
+	background:#f1eaf1 ;
+}
+#nav ul{
+	width: 798px;
+	margin: 80px auto;
+}
+#nav li{
+	width: 100px;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	background: url('../images/兴旺.png') no-repeat right;
+}
+#nav .zh{
+	background: none;
+}
+#nav .last {
+	background: none;
+}
+#nav a span{
+	color: #766363;
+	font-size: 10px;
+}
+#nav li a{
+	display: block;
+	width: 82px;
+	padding:8px 8px ;
+}
+#nav li a:hover{
+	border-bottom: 3px solid #000;
+	color: #000;
+}
+#nav .frist a{
+	border-bottom: 3px solid #000;
+	color: #000;
+}
+#nav li a:hover span {
+	color: #000;
+}
+#footer {
+	width: 918px;
+	height: 83px;
+	margin: 0 auto;
+}
+#footer p {
+	width: 918px;
+	height: 17px;
+	font-size: 14px;
+	padding-top: 10px;
+	text-align: center;
+}
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+}

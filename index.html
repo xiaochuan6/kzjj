@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>可至家居</title>
+	<link rel="stylesheet" type="text/css" href="css/gongyong.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div id="header">
+		<div id="headernav">
+			<div id="logo"><img src="images/logo.png"></div>
+			<ul id="nav" class="clearfix">
+				<li class="frist"><a href="index.html">网站首页<br><span>HOME</span></a></li>
+				<li><a href="aboutus.html">关于我们<br><span>ABOUT US</span></a></li>
+				<li><a href="products.html">家居产品<br><span>PRODUCTS</span></a></li>
+				<li><a href="projects.html">工程案例<br><span>PROJECTS</span></a></li>
+				<li><a href="news.html">新闻中心<br><span>NEWS</span></a></li>
+				<li><a href="jionus.html">招商加盟<br><span>JION US</span></a></li>
+				<li class="zh"><a href="contactus.html">联系我们<span>CONTACT US</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<p id="prev"> < </p>
+		<p id="next"> > </p>
+		<ul class="clearfix">
+			<li>
+				<a href="products.html"><img src="images/banner1.jpg" alt="tu1"></a>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/banner2.jpg" alt="tu2"></a>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/banner3.jpg" alt="tu3"></a>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/banner4.jpg" alt="tu4"></a>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/banner5.jpg" alt="tu5"></a>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/banner6.jpg" alt="tu6"></a>
+			</li>
+		</ul>
+		<div id="btns">
+			<span index="0" class="on1"></span>
+			<span index="1"></span>
+			<span index="2"></span>
+			<span index="3"></span>
+			<span index="4"></span>
+			<span index="5"></span>
+		</div>
+	</div>
+	<div id="content">
+		<div id="main">
+			<ul id="ul1">
+				<li><a href="products1.html"><img src="images/column01.png"><div><span>软装饰品<br></span></div></a></li>
+				<li><a href="projects.html"><img src="images/column02.png"><div><span>案例展示</span></div></a></li>
+				<li><a href="news.html"><img src="images/column03.png"><div><span>新闻资讯</span></div></a></li>
+				<li><a href="contactus.html"><img src="images/column04.png"><div><span>门店查询</span></div></a></li>
+			</ul>
+			<div id="main2">
+				<div id="left1"><p><b>LEAVE A MESSAGE</b>- @Cozy Furniture</p></div>
+				<div id="right1">
+					<ul id="ul2">
+						<li>【可至软装】Andrew Martin国际室内设计大奖作品-杭州华联钱塘公馆<a href="projects.html">read more</a></li>
+						<li>【可至软装】南京第一豪宅-嘉里·雅颂居<a href="projects.html">read more</a></li>
+						<li>【可至软装】2014中国区最佳样板房-福州橡树湾<a href="projects.html">read more</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="main3">
+    	<div id="left3">
+      	<ul>
+        <div>RESOURCES</div>
+        <li><a href="#">关于可至</a></li>
+        <li><a href="#">会员中心</a></li>
+        <li><a href="#">营销网络</a></li>
+        <li><a href="#">人才招聘</a></li>
+        <li><a href="#">联系我们</a></li>
+      	</ul>
+    	</div>
+    	<div id="center3">
+      	<h1>JOIN THE CONVERSATION</h1>
+      	<div id="wx"><a><img src="images/wx.png"></a></div>
+      	<div id="ss"> <img src="images/weixin.png"> </div>
+    	</div>
+    	<div id="right3">
+      <div>
+        <h1 >BE THE FIRST TO KNOW</h1>
+        <div id="yx">
+          <div id="yximg"><img src="images/yx.png"></div>
+          <div id="yxwz"> Sign up for news on<br>products,<br>events and promotions </div>
+        </div>
+        <div id="ss">
+          <input type="text" value="enter email address">
+        </div>
+      </div>
+    	</div>
+  	</div>
+	</div>
+	<div id="footer">
+		<div><p>Copyright © 2015 Cozy  All rights reserved可至家居（杭州）有限公司版权所有</p>
+	  <a href="#"><p>浙ICP备09082788号-1</p></a>
+		<p>浙公网安备 33010802004913号</p>
+	</div>
+</div>
+<script>
+	var div=document.getElementById('banner');//容器
+	var ul=div.getElementsByTagName('ul')[0];//列表
+	var imgs=ul.getElementsByTagName('img');//所有图片
+	var prev=document.getElementById('prev');//右箭头
+	var next=document.getElementById('next');//左箭头
+	var btn=document.getElementById('btns');
+	var btns=btn.getElementsByTagName('span');
+	var btnLen=btns.length;//按钮数量
+	var offset=-imgs[0].offsetWidth;
+	//图片移动距离（一个图片的宽度）
+	var imgNum=imgs.length;
+	//图片数量（去掉两个重复的图片）
+	var interval=2000;
+	//轮播时间间隔（1.5s）
+	var index=0;//图片的序号（初始为0）
+	ul.style.left=offset*index+'px';
+	//设置轮播图初始位置
+	function move() {
+		if (index>imgNum-1) {
+			index=0;
+			//超过最大图片数回到第一幅图
+		}
+		if (index<0) {
+			index=imgNum-1
+			//超过最小图片数回到最后一幅图
+		}
+		ul.style.left=offset*index+'px';
+		//设置轮播图新的位置
+	}
+	function showBtn() {
+		for (var j=0;j<btnLen;j++) {
+			// btns[j].className='';
+			if (btns[j].className=='on') {//找到class为on的按钮
+				btns[j].removeAttribute('class');//清除它的class属性
+				break;//因为只有一个class为on的按钮所以找到清除比较简单.
+			}
+		}
+		btns[index].className='on';
+	}
+	prev.onclick=function (){
+		index--;//显示上一幅图
+		move();//切换图片
+		showBtn();//切换按钮
+	}
+	next.onclick=function (){
+		index++;//显示下一幅图
+		move();//切换图片
+		showBtn();//切换按钮
+	}
+	var timer=setInterval(next.onclick,interval);
+	div.onmouseover=function(){
+		clearInterval(timer);//停止轮播
+	}
+	div.onmouseout=function(){
+		timer=setInterval(next.onclick,interval);//开始轮播
+	}
+	for (var i=0;i<btnLen;i++) {
+		btns[i].onmouseover=function () {
+			if (this.className=='on') {
+				return;
+			}
+			var Index=this.getAttribute('index');//获取到点击的按钮的index属性
+			index=Index;//把当前要显示的图片设置为点击的按钮的序号（index）对应的图片
+			move();//切换图片
+			showBtn();//切换按钮
+		}
+	}
+	</script>
+</body>
+</html>

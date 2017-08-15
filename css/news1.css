@@ -1,0 +1,135 @@
+	#banner {
+		height: 175px;
+	}
+	#banner img{
+		height: 175px;
+		width: 100%;
+	}
+	#content #connav {
+		width: 920px;
+		height: 17px;
+		margin: 30px 0;
+		font-size: 12px;
+	}
+	#content #connav a{
+		margin: 0 5px;
+		font-size: 12px;
+		color: #000;
+	}
+	#content #connav a:hover {
+		font-weight: bold;
+	}
+	#main {
+		height: 600px;
+	}
+	#left {
+		width: 200px;
+		height: 186px;
+		float: left;
+		font-size: 12px;
+	}
+	#left img {
+	margin-bottom: 20px;
+	}
+	#left ul {
+		width: 200px;
+		height: 120px;
+		padding-bottom: 20px;
+		border-top: 2px solid #999;
+		border-bottom: 2px solid #999;
+	}
+	#left ul li {
+		margin-top: 24px;
+		margin-left: 20px;
+		text-align: left;
+		cursor: pointer;
+		color: #666;
+	}
+	#left ul li:hover,#left ul .act {
+		color: #000;
+		font-weight: bold;
+	}
+	#right  h2{
+		font-size: 25px;
+		font-weight: normal;
+		margin-bottom: 20px;
+		padding-bottom: 17px;
+		border-bottom:  2px solid #999;
+	}
+	#right  h2 span {
+		margin: 0 5px;
+	}
+		#right {
+			width: 700px;
+			margin-left: 20px;
+			float: left;
+		}
+		#newstop{
+			width: 700px;
+		}
+		#newstop h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 36px;
+		}
+		#newstop p {
+    font-weight: normal;
+    text-align: center;
+    line-height: 25px;
+    color: #666;
+    border-bottom: 1px dotted #000;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+		}
+		#newsmain ul li img {
+			width: 650px;
+			height: 550px;
+		}
+		#newsmain ul li {
+			line-height: 3;
+			font-size: 14px;
+			color: #333;
+			text-align: center;
+		}
+		#newsbl a{
+			display: block;
+			width: 418px;
+			font-size: 14px;
+			margin: 10px 0;
+		}
+		#newsbl a:hover {
+			color: #c00;
+		}
+		#newsbr {
+			display: block;
+			float: right;
+			width: 50px;
+			height: 25px;
+			background: #333;
+			font-size: 14px;
+			color: #fff;
+			border-radius: 3px;
+			text-align: center;
+			line-height: 25px;
+		}
+		#newsbr:hover {
+			background: #888;
+			color: #c00;
+			font-weight: bold;
+		}
+		#footer {
+			width: 100%;
+			height: 90px;
+			margin-top: 20px;
+			background: #999;
+		}
+		#footer div{
+			margin: 0 auto;
+			color: #000;
+			width: 900px;
+		}
+		#footer div a{
+			color: #333;
+		}

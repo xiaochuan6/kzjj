@@ -1,0 +1,52 @@
+
+#banner {
+	margin: 0 auto;
+	width: 920px;
+	height: 100%;
+}
+#banner a {
+	position: relative;
+}
+#banner a:hover img{
+	opacity: .5;
+}
+#banner a:hover #txt1 img{
+	opacity: 1;
+}
+#banner a:hover #txt2 img{
+	opacity: 1;
+}
+#banner a img{
+	width: 460px;
+	float: left;
+}
+#banner #txt1 img,#banner #txt2 img{
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	z-index: 3;
+}
+#txt1{
+	position: absolute;
+	top: 130px;
+	right: 130px;
+}
+#txt2{
+	position: absolute;
+	top: 130px;
+	right: 130px;
+}
+#footer {
+	width: 100%;
+	height: 90px;
+	margin-top: 20px;
+	background: #999;
+}
+#footer div{
+	margin: 0 auto;
+	color: #000;
+	width: 900px;
+}
+#footer div a{
+	color: #333;
+}

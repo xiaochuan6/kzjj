@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>可至家居</title>
+	<link rel="stylesheet" type="text/css" href="css/gongyong.css">
+	<link rel="stylesheet" type="text/css" href="css/aboutus.css">
+	<link rel="stylesheet" type="text/css" href="css/contactus.css">
+</head>
+<body>
+	<div id="header">
+		<div id="headernav">
+			<div id="logo"><img src="images/logo.png"></div>
+			<ul id="nav" class="clearfix">
+				<li><a href="index.html">网站首页<br><span>HOME</span></a></li>
+				<li><a href="aboutus.html">关于我们<br><span>ABOUT US</span></a></li>
+				<li><a href="products.html">家居产品<br><span>PRODUCTS</span></a></li>
+				<li><a href="projects.html">工程案例<br><span>PROJECTS</span></a></li>
+				<li><a href="news.html">新闻中心<br><span>NEWS</span></a></li>
+				<li><a href="jionus.html">招商加盟<br><span>JION US</span></a></li>
+				<li class="frist zh"><a href="contactus.html">联系我们<span>CONTACT US</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<img src="images/co01.jpg">
+	</div>
+	<div id="content">
+		<div id="connav"><a href="index.html">HOME</a><a href="contactus.html">/联系我们</a>/联系方式Contact Information Profile
+		</div>
+		<div id="main">
+			<div id="left">
+				<img src="images/lianxi.png">
+				<ul id="left1">
+					<li class="act">联系方式Contact Information</li>
+				</ul>
+			</div>
+			<div id="right">
+				<section id="lx" class="show">
+					<h2>联系<span>|</span>方式</h2>
+						<form name="reg" action="x.php" method="post" class="clearfix">
+							<p><span>您的姓名：</span><input type="text" name="name" value="" ><b>*</b></p>
+							<p><span>手机号码：</span><input type="tel" name="" value=""><b>*</b></p>
+							<p><span>传真号码：</span><input type="tel" name="" value=""></p>
+							<p><span>电子邮箱：</span><input type="e-mail" name="" value=""><span></span></p>
+							<p><span>您的手机：</span><input type="tel" name="" value=""></p>
+							<p><span class="x">留言：</span><textarea name="intro" cols="30" rows="10" ></textarea><b>*</b></p>
+							<p class="last"><input type="submit" value="提交"></p>
+						</form>
+					<div id="rx">
+					<h1>联系我们</h1>
+					<p>如果你有任何问题或需要进一步的协助,请与我们联系:</p>
+					<h3>加盟中心</h3>
+					<p>Add：杭州市滨江区长河街道滨盛路1786号汉氏大厦901-905 可至家居</p>
+					<p>Tel：0571-8724 8190</p>
+					<h3>设计中心</h3>
+					<p>Add：杭州市滨江区长河街道滨盛路1786号汉氏大厦901-905 可至家居</p>
+					<p>Tel：0571-8724 8190</p>
+					<h3>可至家居杭州旗舰店</h3>
+					<p>Add：杭州市滨江区长河街道滨盛路1786号汉氏大厦901-905 可至家居</p>
+					<p>Tel：0571-8724 8190</p>
+					<h3>可至·家博邸杭州旗舰店</h3>
+					<p>Add：杭州市滨江区长河街道滨盛路1786号汉氏大厦901-905 可至家居</p>
+					<p>Tel：0571-8724 8190</p>
+				</div>
+				</section>
+				
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div><p>Copyright © 2015 Cozy  All rights reserved可至家居（杭州）有限公司版权所有</p>
+	  <a href="#"><p>浙ICP备09082788号-1</p></a>
+		<p>浙公网安备 33010802004913号</p>
+	</div>
+</div>
+<script>
+		var tabs=document.getElementById('left1');
+		var btns=left1.getElementsByTagName('li');
+		var right=document.getElementById('right');
+		var divs=right.getElementsByTagName('section');
+		for(var i=0;i<btns.length;i++){
+			btns[i].index=i;
+			btns[i].onclick=function (){
+				for(var i=0;i<btns.length;i++){
+					btns[i].className='';
+					divs[i].className='';
+				}
+				this.className='act';
+				divs[this.index].className='show';
+			}
+		}
+</script>
+</body>
+</html>

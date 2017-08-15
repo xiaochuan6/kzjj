@@ -1,0 +1,48 @@
+
+		#banner p{
+			width: 900px;
+			height: 450px;
+			margin: 0 auto;
+			background-size: cover;
+			margin-bottom: 10px;
+		}
+		#b1 {
+			background: url('images/join01.jpg') no-repeat center;
+		}
+		#b2 {
+			background: url('images/join02.jpg') no-repeat center;
+		}
+		#b3 {
+			background: url('images/join03.jpg') no-repeat center;
+		}
+		#b4 {
+			background: url('images/join04.jpg') no-repeat center;
+		}
+		#banner #b5 {
+			height: 700px;
+			background: url('images/join05.jpg') no-repeat center;
+		}
+		#b6 {
+			background: url('images/join06.jpg') no-repeat center;
+		}
+		#b7 {
+			background: url('images/join07.jpg') no-repeat center;
+		}
+		#b8 {
+			height: 700px;
+			background: url('images/join08.jpg') no-repeat center;
+		}
+		#footer {
+			width: 100%;
+			height: 90px;
+			margin-top: 20px;
+			background: #999;
+		}
+		#footer div{
+			margin: 0 auto;
+			color: #000;
+			width: 900px;
+		}
+		#footer div a{
+			color: #333;
+		}
