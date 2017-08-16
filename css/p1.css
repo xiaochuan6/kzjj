@@ -1,17 +1,18 @@
-	#main ul{
+	#main .ul{
 		width: 910px;
+		height: 350px;
 		margin: 0 auto;
 	}
 	#main a{
+		float: left;
+		width: 182px;
+		height: 350px;
+		background: center;
+		transition: width linear .5s;
+		/* display: block; */
 		position: relative;
 	}
-	#main a:hover img {
-		opacity: .8;
-	}
-	#main ul li{
-		float: left;
-	}
-	#main ul li span {
+	#main .ul a span {
 		position: absolute;
 		width: 120px;
 		height: 30px;
@@ -22,13 +23,4 @@
 		bottom: 30px;
 		left: 50%;
 		margin-left: -60px;
-	}
-	#main ul li img{
-		width: 182px;
-		height: 350px;
-    opacity: 1;
-    margin-left: 0px;
-    background-image: url("img/pro.jpg");
-    background-position: 50% 0px;
-    background-repeat: no-repeat;
 	}

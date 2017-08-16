@@ -23,13 +23,13 @@
 		</div>
 	</div>
 	<div id="main" class="clearfix">
-		<ul>
-			<li><a href="javascript:;"><img src="images/pro.jpg"><span id="l1">大都会系列</span></a></li>
-			<li><a href="javascript:;"><img src="images/pro2.jpg"><span id="l2">路易十六系列</span></a></li>
-			<li><a href="javascript:;"><img src="images/pro3.jpg"><span id="l3">第五大道系列</span></a></li>
-			<li><a href="javascript:;"><img src="images/pro4.jpg"><span id="l4">英伦古堡系列</span></a></li>
-			<li><a href="javascript:;"><img src="images/pro5.jpg"><span id="l5">海德印象系列</span></a></li>
-		</ul>
+		<div class="ul">
+			<a href="javascript:;" style="background-image: url('images/pro.jpg');"><span id="l1">大都会系列</span></a>
+			<a href="javascript:;" style="background-image: url('images/pro2.jpg');"><span id="l2">路易十六系列</span></a>
+			<a href="javascript:;" style="background-image: url('images/pro3.jpg');"><span id="l3">第五大道系列</span></a>
+			<a href="javascript:;" style="background-image: url('images/pro4.jpg');"><span id="l4">英伦古堡系列</span></a>
+			<a href="javascript:;" style="background-image: url('images/pro5.jpg');"><span id="l5">海德印象系列</span></a>
+		</div>
 	</div>
 	<div id="footer">
 		<div><p>Copyright © 2015 Cozy  All rights reserved可至家居（杭州）有限公司版权所有</p>
@@ -37,6 +37,16 @@
 		<p>浙公网安备 33010802004913号</p>
 	</div>
 </div>
+<script src="js/jquery.min.js"></script>
+<script>
+	$('#main a').hover(function() {
+		$(this).css('width', '300px').siblings().css('width', '152px');
+		// $('.shadow').show();
+		$(this).find('.shadow').hide();
+	}, function() {
+		$('#main a').css('width', '182px');
+	});
+</script>
 
 </body>
 </html>
